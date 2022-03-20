@@ -10,6 +10,12 @@ function delay(duration) {
 }
 
 app.get('/', (req, res) => {
+    // blocking functuons...
+    // JSON.stringify({}) => "{}"
+    // JSON.parse("{}") => {}
+    // [5,2,3,4,2].sort()
+    // crypto hashing functions...
+    
     res.send('Performance example');
 });
 
